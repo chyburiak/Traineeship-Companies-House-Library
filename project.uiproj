@@ -1,0 +1,6 @@
+{
+  "Name": "CompaniesHouse",
+  "ProjectType": "Library",
+  "Description": "Companies House Library.",
+  "MainFile": "NewActivity.xaml"
+}
