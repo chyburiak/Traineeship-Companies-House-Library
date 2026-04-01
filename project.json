@@ -5,7 +5,8 @@
   "main": "NewActivity.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "3.4.1",
-    "UiPath.System.Activities": "26.2.1"
+    "UiPath.System.Activities": "26.2.1",
+    "UiPath.UIAutomation.Activities": "25.10.28"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -96,6 +97,20 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\Excel\\TestCase_DeleteFile_FileDoesntExist.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ff81600e-26b9-4d37-9de2-7ecb6ae0565f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Browser\\TestCase_Launch.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e3d0b009-7380-4ff7-8326-e9d09cc1ff1d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Browser\\TestCase_Launch_WindowExists.xaml"
       }
     ],
     "saveToCloud": false

@@ -27,6 +27,7 @@
 # Contents are environment-specific and regenerated on each run.
 # Safe to ignore.
  /Exception_Screenshots/
+ /.screenshots/
 
 ##################################
 ### OS / System Files
