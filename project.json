@@ -68,6 +68,34 @@
       {
         "templateType": "TestCase",
         "fileName": ".templates\\TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "811bf7ac-6a93-4791-9f70-ac0513eda61e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_DeleteFile.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9d5690a1-b024-4335-963e-de66dd61b845",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_DeleteFile_EmptyString.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "dca5e366-e59a-4c85-b265-b50cc8eb0f41",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_DeleteFile_InvalidString.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "508f05fe-abcf-438e-af99-1c066a1ad5aa",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_DeleteFile_FileDoesntExist.xaml"
       }
     ],
     "saveToCloud": false
