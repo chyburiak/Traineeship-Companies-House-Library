@@ -139,7 +139,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message - Start Work" sap:VirtualizedContainerService.HintSize="415.6981132075471,172.0754716981132" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[str_ComponentName + &quot;Start Work&quot;]" />
+      <ui:LogMessage DisplayName="Log Message - Start Work" sap:VirtualizedContainerService.HintSize="415.6981132075471,172.0754716981132" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[str_ComponentName + &quot; Start Work.&quot;]" />
       <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="415.6981132075471,103.24528301886792" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[in_str_FilePath]" />
     </Sequence>
     <Sequence DisplayName="Sequence - Post Condition Check" sap:VirtualizedContainerService.HintSize="487.2452830188679,771.622641509434" sap2010:WorkflowViewState.IdRef="Sequence_3">
