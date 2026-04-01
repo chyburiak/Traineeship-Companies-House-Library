@@ -4,6 +4,7 @@
   "description": "Companies House Library.",
   "main": "NewActivity.xaml",
   "dependencies": {
+    "UiPath.Excel.Activities": "3.4.1",
     "UiPath.System.Activities": "26.2.1"
   },
   "webServices": [],
@@ -42,6 +43,31 @@
       {
         "templateType": "Generic",
         "fileName": ".templates\\Component.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "fb619d40-8b56-492f-8fe5-7e17cac7298b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_CreateFile.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "548c378f-bdca-4a2f-9870-e4fed20e087e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_CreateFile_InvalidString.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f8fa8194-8be7-4a2f-89ae-dcbf1ed81c3a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_CreateFile_EmptyString.xaml"
+      },
+      {
+        "templateType": "TestCase",
+        "fileName": ".templates\\TestCase.xaml"
       }
     ],
     "saveToCloud": false

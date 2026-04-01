@@ -90,3 +90,6 @@ out/
 # cmake-build-*/
 # - CMake build directories (used by some JetBrains IDEs)
 cmake-build-*/
+
+# Test Result files.
+Data/
