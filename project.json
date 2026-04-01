@@ -111,6 +111,13 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\Browser\\TestCase_Launch_WindowExists.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "de1be93a-cf73-4ccf-b61c-e1f92dc05102",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Browser\\TestCase_SearchCompany.xaml"
       }
     ],
     "saveToCloud": false

@@ -68,6 +68,8 @@
       <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence sap2010:Annotation.AnnotationText="Component Name: &#xA;Description:&#xA;Pre Condition: &#xA;Post Condition: " DisplayName="Component" sap:VirtualizedContainerService.HintSize="1405.9245283018865,2045.8867924528302" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -129,7 +131,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message - Start Work" sap:VirtualizedContainerService.HintSize="415.6981132075471,172.0754716981132" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[str_ComponentName + &quot;Start Work&quot;]" />
+      <ui:LogMessage DisplayName="Log Message - Start Work" sap:VirtualizedContainerService.HintSize="415.6981132075471,172.0754716981132" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[str_ComponentName + &quot; Start Work.&quot;]" />
       <ui:Comment sap:VirtualizedContainerService.HintSize="415.6981132075471,79.69811320754717" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Function Body" />
     </Sequence>
     <Sequence DisplayName="Sequence - Post Condition Check" sap:VirtualizedContainerService.HintSize="487.2452830188679,694.6415094339623" sap2010:WorkflowViewState.IdRef="Sequence_3">
