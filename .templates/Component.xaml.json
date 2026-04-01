@@ -1,0 +1,21 @@
+{
+  "DisplayName": "Component",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "out_bool_Success",
+      "DisplayName": "out_bool_Success",
+      "Category": null,
+      "Tooltip": "For TestCases only.",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}
