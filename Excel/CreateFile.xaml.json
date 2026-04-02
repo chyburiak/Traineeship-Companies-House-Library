@@ -1,0 +1,21 @@
+{
+  "DisplayName": "CreateFile",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_str_FilePath",
+      "DisplayName": "in_str_FilePath",
+      "Category": null,
+      "Tooltip": "Contains the full file path, including the file name and extension.",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

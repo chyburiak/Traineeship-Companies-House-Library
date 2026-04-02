@@ -4,13 +4,15 @@
   "description": "Companies House Library.",
   "main": "NewActivity.xaml",
   "dependencies": {
-    "UiPath.System.Activities": "26.2.1"
+    "UiPath.Excel.Activities": "3.4.1",
+    "UiPath.System.Activities": "26.2.1",
+    "UiPath.UIAutomation.Activities": "25.10.28"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "26.0.189.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.1",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -38,7 +40,156 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "templateType": "Generic",
+        "fileName": ".templates\\Component.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "fb619d40-8b56-492f-8fe5-7e17cac7298b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_CreateFile.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "548c378f-bdca-4a2f-9870-e4fed20e087e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_CreateFile_InvalidString.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f8fa8194-8be7-4a2f-89ae-dcbf1ed81c3a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_CreateFile_EmptyString.xaml"
+      },
+      {
+        "templateType": "TestCase",
+        "fileName": ".templates\\TestCase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "811bf7ac-6a93-4791-9f70-ac0513eda61e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_DeleteFile.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9d5690a1-b024-4335-963e-de66dd61b845",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_DeleteFile_EmptyString.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "dca5e366-e59a-4c85-b265-b50cc8eb0f41",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_DeleteFile_InvalidString.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "508f05fe-abcf-438e-af99-1c066a1ad5aa",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_DeleteFile_FileDoesntExist.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ff81600e-26b9-4d37-9de2-7ecb6ae0565f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Browser\\TestCase_Launch.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e3d0b009-7380-4ff7-8326-e9d09cc1ff1d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Browser\\TestCase_Launch_WindowExists.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "de1be93a-cf73-4ccf-b61c-e1f92dc05102",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Browser\\TestCase_SearchCompany.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f6001cae-808e-43c3-a81b-774488854260",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Browser\\TestCase_AnalyzeSearchResult.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6a80af9a-982b-4ad5-8230-91498dbe4bf7",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Browser\\TestCase_AnalyzeSearchResult_NoResult.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a2d827b1-242b-4569-8cd1-9c85c91ea801",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Browser\\TestCase_OpenCompany.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ab6cf66e-9b90-4d48-a27f-096201997a09",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Browser\\TestCase_ExtractCompanyDetails.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "69240804-52c0-420a-a5f1-a62c330e2dc3",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Browser\\TestCase_ReturnToSearch.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ea9d46e4-a512-4961-b905-8bae744c2b1e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\StorageBucket\\TestCase_Upload.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0f5179db-2f34-4e09-b878-9e2d67448fa5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\StorageBucket\\TestCase_Upload_NoFile.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ada75227-46fc-4f10-921f-be2bcc7aff69",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_FillData.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "80dedbfa-05eb-4c8f-9965-902359aed753",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_FillData_NoStatus.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0ea3fe29-d5d1-4318-9772-6dad5adafe86",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_FillData_NoFile.xaml"
+      }
+    ],
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
