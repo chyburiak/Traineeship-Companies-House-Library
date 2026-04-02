@@ -118,6 +118,20 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\Browser\\TestCase_SearchCompany.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f6001cae-808e-43c3-a81b-774488854260",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Browser\\TestCase_AnalyzeSearchResult.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6a80af9a-982b-4ad5-8230-91498dbe4bf7",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Browser\\TestCase_AnalyzeSearchResult_NoResult.xaml"
       }
     ],
     "saveToCloud": false
