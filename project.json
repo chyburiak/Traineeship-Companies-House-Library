@@ -153,6 +153,20 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\Browser\\TestCase_ReturnToSearch.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ea9d46e4-a512-4961-b905-8bae744c2b1e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\StorageBucket\\TestCase_Upload.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0f5179db-2f34-4e09-b878-9e2d67448fa5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\StorageBucket\\TestCase_Upload_NoFile.xaml"
       }
     ],
     "saveToCloud": false
