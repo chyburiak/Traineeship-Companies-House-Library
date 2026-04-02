@@ -27,6 +27,7 @@
 # Contents are environment-specific and regenerated on each run.
 # Safe to ignore.
  /Exception_Screenshots/
+ /.screenshots/
 
 ##################################
 ### OS / System Files
@@ -90,3 +91,9 @@ out/
 # cmake-build-*/
 # - CMake build directories (used by some JetBrains IDEs)
 cmake-build-*/
+
+# Test Result files.
+Data/
+
+.storage/
+.autopilot/

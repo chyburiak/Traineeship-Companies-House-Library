@@ -1,0 +1,57 @@
+{
+  "DisplayName": "Upload",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_StorageBucketName",
+      "DisplayName": "in_StorageBucketName",
+      "Category": null,
+      "Tooltip": "The Storage Bucket name from Orchestrator.",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_StorageBucketFolder",
+      "DisplayName": "in_StorageBucketFolder",
+      "Category": null,
+      "Tooltip": "The Storage folder name from Orchestrator.",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_FilePath",
+      "DisplayName": "in_FilePath",
+      "Category": null,
+      "Tooltip": "Represents the file path to the local file that must be uploaded to the Storage Bucket.",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_FileName",
+      "DisplayName": "in_FileName",
+      "Category": null,
+      "Tooltip": "The output file will be uploaded to the Storage Bucket with the following name.",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}
