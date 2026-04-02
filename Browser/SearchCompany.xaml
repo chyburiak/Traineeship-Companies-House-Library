@@ -106,7 +106,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="SearchCompany Name: chrome.exe - Search Page - Browser/SearchCompany&#xA;Description: Input Company Name Details and Click Search.&#xA;Pre Condition: Ensure on Search Page Exists.&#xA;Post Condition: Found Companies House Search Results Page Loaded." DisplayName="SearchCompany" sap:VirtualizedContainerService.HintSize="1405.9245283018865,2411.7735849056603" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="SearchCompany Name: chrome.exe - Search Page - Browser/SearchCompany&#xA;Description: Input Company Name Details and Click Search.&#xA;Pre Condition: Ensure on Search Page Exists.&#xA;Post Condition: Found Companies House Search Results Page Loaded." DisplayName="SearchCompany" sap:VirtualizedContainerService.HintSize="1356.1132075471696,2411.7735849056603" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_ComponentName" />
     </Sequence.Variables>
@@ -152,7 +152,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Throw DisplayName="Throw - Pre Condition Exception" Exception="[New Exception(str_ComponentName + &quot; - Pre Condition Check Failed.&quot;)]" sap:VirtualizedContainerService.HintSize="415.6981132075471,112.30188679245282" sap2010:WorkflowViewState.IdRef="Throw_1" />
+            <Throw DisplayName="Throw - Pre Condition Exception" Exception="[New Exception(&quot;Companies House Search Page Not Found.&quot;)]" sap:VirtualizedContainerService.HintSize="415.6981132075471,112.30188679245282" sap2010:WorkflowViewState.IdRef="Throw_1" />
           </Sequence>
         </uix:NCheckState.IfNotExists>
         <uix:NCheckState.Target>
