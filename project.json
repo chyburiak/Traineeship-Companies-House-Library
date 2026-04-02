@@ -167,6 +167,27 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\StorageBucket\\TestCase_Upload_NoFile.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ada75227-46fc-4f10-921f-be2bcc7aff69",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_FillData.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "80dedbfa-05eb-4c8f-9965-902359aed753",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_FillData_NoStatus.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0ea3fe29-d5d1-4318-9772-6dad5adafe86",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Excel\\TestCase_FillData_NoFile.xaml"
       }
     ],
     "saveToCloud": false
