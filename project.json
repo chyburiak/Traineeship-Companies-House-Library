@@ -132,6 +132,13 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\Browser\\TestCase_AnalyzeSearchResult_NoResult.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a2d827b1-242b-4569-8cd1-9c85c91ea801",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Browser\\TestCase_OpenCompany.xaml"
       }
     ],
     "saveToCloud": false
