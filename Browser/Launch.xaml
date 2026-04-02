@@ -103,7 +103,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Launch Name: chrome.exe - Browser/Launch&#xA;Description: Launch Companies House Website.&#xA;Pre Condition: No Companies House Window Title.&#xA;Post Condition: Detect Companies House has Launched Successfully." DisplayName="Launch" sap:VirtualizedContainerService.HintSize="1405.9245283018865,2450.7169811320755" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Launch Name: chrome.exe - Browser/Launch&#xA;Description: Launch Companies House Website.&#xA;Pre Condition: No Companies House Window Title.&#xA;Post Condition: Detect Companies House has Launched Successfully." DisplayName="Launch" sap:VirtualizedContainerService.HintSize="1356.1132075471696,2450.7169811320755" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Str_ComponentName" />
     </Sequence.Variables>
@@ -137,7 +137,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Throw DisplayName="Throw - Pre Condition Exception" Exception="[New Exception(Str_ComponentName + &quot; - Pre Condition Check Failed.&quot;)]" sap:VirtualizedContainerService.HintSize="415.6981132075471,112.30188679245282" sap2010:WorkflowViewState.IdRef="Throw_1" />
+            <Throw DisplayName="Throw - Pre Condition Exception" Exception="[New Exception(&quot;Companies House Already Running.&quot;)]" sap:VirtualizedContainerService.HintSize="415.6981132075471,112.30188679245282" sap2010:WorkflowViewState.IdRef="Throw_1" />
           </Sequence>
         </uix:NCheckState.IfExists>
         <uix:NCheckState.IfNotExists>
