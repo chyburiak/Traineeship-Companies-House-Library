@@ -128,9 +128,6 @@
       </Assign.Value>
     </Assign>
     <Sequence DisplayName="Sequence - Pre Condition Check" sap:VirtualizedContainerService.HintSize="487.2452830188679,709.132075471698" sap2010:WorkflowViewState.IdRef="Sequence_2">
-      <Sequence.Variables>
-        <Variable x:TypeArguments="x:Boolean" Name="bool_PreCondition" />
-      </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -234,9 +231,6 @@
       </uix:NApplicationCard>
     </Sequence>
     <Sequence DisplayName="Sequence - Post Condition Check" sap:VirtualizedContainerService.HintSize="487.2452830188679,758.9433962264151" sap2010:WorkflowViewState.IdRef="Sequence_3">
-      <Sequence.Variables>
-        <Variable x:TypeArguments="x:Boolean" Name="bool_PostCondition" />
-      </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
