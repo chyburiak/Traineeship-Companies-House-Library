@@ -108,7 +108,7 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Upload Name: StorageBucket/UpdateFile&#xA;Description: Uploads a file to the Storage Bucket.&#xA;Pre Condition: The target file exists and the target Storage Bucket exists.&#xA;Post Condition: The file is successfully uploaded to the Storage Bucket." DisplayName="Upload" sap:VirtualizedContainerService.HintSize="1356.1132075471696,3953.2075471698113" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Upload Name: StorageBucket/UpdateFile&#xA;Description: Uploads a file to the Storage Bucket.&#xA;Pre Condition: The target file exists and the target Storage Bucket exists.&#xA;Post Condition: The file is successfully uploaded to the Storage Bucket." DisplayName="Upload" sap:VirtualizedContainerService.HintSize="1615.132075471698,3631.698113207547" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_ComponentName" />
       <Variable x:TypeArguments="scg:IEnumerable(ucas:StorageFileInfo)" Name="enum_StorageBucket" />
@@ -119,7 +119,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign DisplayName="Assign - Component name" sap:VirtualizedContainerService.HintSize="524.377358490566,172.0754716981132" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign DisplayName="Assign - Component name" sap:VirtualizedContainerService.HintSize="520.754716981132,172.0754716981132" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[str_ComponentName]</OutArgument>
       </Assign.To>
@@ -127,7 +127,7 @@
         <InArgument x:TypeArguments="x:String">["StorageBucket/UpdateFile"]</InArgument>
       </Assign.Value>
     </Assign>
-    <Sequence DisplayName="Sequence - Pre Condition Check" sap:VirtualizedContainerService.HintSize="524.377358490566,1567.698113207547" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sequence - Pre Condition Check" sap:VirtualizedContainerService.HintSize="520.754716981132,1567.698113207547" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="bool_PreCondition" />
         <Variable x:TypeArguments="x:Boolean" Name="bool_FileExists" />
@@ -199,7 +199,7 @@
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Sequence - Function" sap:VirtualizedContainerService.HintSize="524.377358490566,527.0943396226414" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Sequence - Function" sap:VirtualizedContainerService.HintSize="520.754716981132,527.0943396226414" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -209,9 +209,10 @@
       <ui:LogMessage DisplayName="Log Message - Start Work" sap:VirtualizedContainerService.HintSize="415.6981132075471,172.0754716981132" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[str_ComponentName + &quot; Start Work.&quot;]" />
       <ucas:UploadStorageFile FileResource="{x:Null}" TimeoutMS="{x:Null}" Destination="[in_FileName]" DisplayName="Upload Company Data to Storage Bucket" FolderPath="[in_StorageBucketFolder]" sap:VirtualizedContainerService.HintSize="415.6981132075471,263.5471698113207" sap2010:WorkflowViewState.IdRef="UploadStorageFile_1" Path="[in_FilePath]" StorageBucketName="[in_StorageBucketName]" />
     </Sequence>
-    <Sequence DisplayName="Sequence - Post Condition Check" sap:VirtualizedContainerService.HintSize="524.377358490566,1592.1509433962262" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Sequence - Post Condition Check" sap:VirtualizedContainerService.HintSize="520.754716981132,1270.6415094339623" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="bool_PostCondition" />
+        <Variable x:TypeArguments="x:String" Default="Data\Temp\temp.xlsx" Name="str_StorageBucketFile" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -219,61 +220,28 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ucas:ListStorageFiles Filter="{x:Null}" TimeoutMS="{x:Null}" Directory="/" DisplayName="List Storage Files" FolderPath="[in_StorageBucketFolder]" sap:VirtualizedContainerService.HintSize="489.9622641509434,165.73584905660377" sap2010:WorkflowViewState.IdRef="ListStorageFiles_2" Recursive="True" Result="[enum_StorageBucket]" StorageBucketName="[in_StorageBucketName]" />
-      <ui:ForEach x:TypeArguments="ucas:StorageFileInfo" CurrentIndex="{x:Null}" DisplayName="For Each File in Storage Bucket" sap:VirtualizedContainerService.HintSize="489.9622641509434,820.5283018867924" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[enum_StorageBucket]">
-        <ui:ForEach.Body>
-          <ActivityAction x:TypeArguments="ucas:StorageFileInfo">
-            <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="ucas:StorageFileInfo" Name="currentStorageFileInfo" />
-            </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="487.2452830188679,691.0188679245283" sap2010:WorkflowViewState.IdRef="Sequence_13">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <If Condition="[System.IO.Path.GetFileName(currentStorageFileInfo.FileFullPath) = System.IO.Path.GetFileName(in_FilePath)]" DisplayName="If uploaded file found" sap:VirtualizedContainerService.HintSize="452.8301886792452,631.2452830188679" sap2010:WorkflowViewState.IdRef="If_4">
-                <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450.1132075471698,279.8490566037736" sap2010:WorkflowViewState.IdRef="Sequence_14">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Assign - bool_PostCondition to True" sap:VirtualizedContainerService.HintSize="415.6981132075471,172.0754716981132" sap2010:WorkflowViewState.IdRef="Assign_4">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:Boolean">[bool_PostCondition]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                    <ui:Continue sap:VirtualizedContainerService.HintSize="415.6981132075471,48" sap2010:WorkflowViewState.IdRef="Continue_1" />
-                  </Sequence>
-                </If.Then>
-                <If.Else>
-                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450.1132075471698,222.79245283018867" sap2010:WorkflowViewState.IdRef="Sequence_15">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Assign - bool_PostCondition to False" sap:VirtualizedContainerService.HintSize="415.6981132075471,163.01886792452828" sap2010:WorkflowViewState.IdRef="Assign_5">
-                      <Assign.To>
-                        <OutArgument x:TypeArguments="x:Boolean">[bool_PostCondition]</OutArgument>
-                      </Assign.To>
-                      <Assign.Value>
-                        <InArgument x:TypeArguments="x:Boolean">[False]</InArgument>
-                      </Assign.Value>
-                    </Assign>
-                  </Sequence>
-                </If.Else>
-              </If>
-            </Sequence>
-          </ActivityAction>
-        </ui:ForEach.Body>
-      </ui:ForEach>
-      <If Condition="[bool_PostCondition = False]" DisplayName="If - Post Condition Check Fails" sap:VirtualizedContainerService.HintSize="489.9622641509434,523.4716981132075" sap2010:WorkflowViewState.IdRef="If_2">
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.3396226415094,492.6792452830188" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450.1132075471698,382.18867924528297" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ucas:DownloadStorageFile TimeoutMS="{x:Null}" Destination="[str_StorageBucketFile]" DisplayName="Download Storage File" FolderPath="[in_StorageBucketFolder]" sap:VirtualizedContainerService.HintSize="415.6981132075471,165.73584905660377" sap2010:WorkflowViewState.IdRef="DownloadStorageFile_1" Path="/" StorageBucketName="[in_StorageBucketName]" />
+            <ui:FileExistsX DisplayName="File Exists - str_StorageBucketFile" Exists="[bool_PostCondition]" sap:VirtualizedContainerService.HintSize="415.6981132075471,156.67924528301884" sap2010:WorkflowViewState.IdRef="FileExistsX_2" Path="[str_StorageBucketFile]" />
+          </Sequence>
+        </ui:CommentOut.Body>
+      </ui:CommentOut>
+      <Assign sap:VirtualizedContainerService.HintSize="486.3396226415094,172.0754716981132" sap2010:WorkflowViewState.IdRef="Assign_4">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:Boolean">[bool_PostCondition]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <If Condition="[bool_PostCondition = False]" DisplayName="If - Post Condition Check Fails" sap:VirtualizedContainerService.HintSize="486.3396226415094,523.4716981132075" sap2010:WorkflowViewState.IdRef="If_2">
         <If.Then>
           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450.1132075471698,172.0754716981132" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
