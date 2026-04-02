@@ -94,3 +94,5 @@ cmake-build-*/
 
 # Test Result files.
 Data/
+
+.storage/
